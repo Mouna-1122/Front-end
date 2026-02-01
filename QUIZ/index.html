@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Frontend Development Quiz</h1>
+        <button id="fact-btn" class="btn">Random Fact</button>
+        <p id="fact" class="fact-text"></p>
+    </header>
+
+    <main>
+        <div id="quiz-container" class="card">
+            <p id="progress" class="progress-text"></p>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <div class="nav-buttons">
+                <button id="prev-btn" class="btn">Previous</button>
+                <button id="next-btn" class="btn">Next</button>
+                <button id="submit-btn" class="btn hidden">Submit</button>
+            </div>
+        </div>
+
+        <div id="result" class="card hidden">
+            <h2>🎉 Your Score: <span id="score"></span></h2>
+            <button onclick="restartQuiz()" class="btn restart-btn">Restart Quiz</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
